@@ -1,7 +1,7 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { HeaderComponent } from './header.component';
-import { UIShellModule } from 'carbon-components-angular';
+import { Tooltip, UIShellModule } from 'carbon-components-angular';
 
 describe('HeaderComponent', () => {
 	let component: HeaderComponent;
@@ -9,7 +9,7 @@ describe('HeaderComponent', () => {
 
 	beforeEach(async(() => {
 		TestBed.configureTestingModule({
-			declarations: [ HeaderComponent ],
+			declarations: [ HeaderComponent, Tooltip ],
 			imports: [ UIShellModule ]
 		})
 		.compileComponents();

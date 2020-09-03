@@ -4,6 +4,7 @@
 			<ibm-breadcrumb-item href="/">
 				Getting started
 			</ibm-breadcrumb-item>
+
 		</ibm-breadcrumb>
 		<h1 class="landing-page__heading">
 			Design &amp; build with Carbon
@@ -20,6 +21,46 @@
 							<h2 class="landing-page__subheading">
 								What is Carbon?
 							</h2>
+<!--							<div>-->
+<!--								<ng-template #template let-tooltip="tooltip">-->
+<!--									<p icon ibmIconPhone>Heeft u behoefte aan enige vorm van ondersteuning? Onze Servicedesk geeft u advies en helpt u graag verder</p>-->
+<!--									<p>Help: test@service.nl</p>-->
+<!--									<p>mobile: 1234567789</p>-->
+<!--									<div class="bx&#45;&#45;tooltip__footer">-->
+<!--										<a href="/" class="bx&#45;&#45;link">Learn More</a>-->
+<!--										<button class="bx&#45;&#45;btn bx&#45;&#45;btn&#45;&#45;primary" (click)="tooltip.doClose()">Close</button>-->
+<!--									</div>-->
+<!--								</ng-template>-->
+
+<!--								<div class="bx&#45;&#45;tooltip__label">-->
+<!--									<p>wow das an amaxing tooltip</p>-->
+<!--									<span-->
+<!--										[ibmTooltip]="template"-->
+<!--										trigger="click">-->
+
+<!--									<div role="button">-->
+<!--										<ibm-icon-information-filled size="16"></ibm-icon-information-filled>-->
+<!--									</div>-->
+<!--								</span>-->
+<!--								</div>-->
+<!--								<ibm-placeholder></ibm-placeholder>-->
+<!--							</div>-->
+
+								<Tooltip
+								direction="bottom"
+								tabIndex={0}
+								triggerText="Tooltip label"
+							>
+								<p>
+									This is some tooltip text. This box shows the maximum amount of text that should appear inside. If more room is needed please use a modal instead.
+								</p>
+								<div className="bx--tooltip__footer">
+									<Button size="small">
+										Create
+									</Button>
+								</div>
+							</Tooltip>
+
 							<p class="landing-page__p">
 								Carbon is IBM’s open-source design system for digital
 								products and experiences. With the IBM Design Language
